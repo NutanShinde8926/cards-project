@@ -1,7 +1,10 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
 }
+
 html,
 body{
   height: 100%;
@@ -11,17 +14,22 @@ body{
 .parent{
   min-height: 100vh;
   width: 100%;
-  background-color: #111;
+  background-color: #f0f0f0;
   padding: 30px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
 }
 
 .card{
-  height: 280px;
-  width: 250px;
+  height: 300px;
+  width: 260px;
   background-color: #fff;
-  border-radius: 30px;
-  padding: 30px;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,44 +37,91 @@ body{
 
 .card .top{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
+
 .top img{
-  height: 30px;
-  width: 30px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
-  border: 1px solid #dadada;
+  border: 1px solid #e3e3e3;
   padding: 2px;
+  object-fit: cover;
 }
+
 .top button{
   display: flex;
   align-items: center;
-  border: 1px solid #dadada;
+  gap: 4px;
+  border: 1px solid #e3e3e3;
   padding: 3px 8px;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 5px;
-  gap: 3px;
   background-color: transparent;
-  color:#b1b1b1;
+  color: #8b8b8b;
+  cursor: pointer;
+}
 
-}
-.center{
-  background-color: red;
-}
 .center h3{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
 }
+
 .center h3 span{
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 400;
   color: #8b8b8b;
+  margin-left: 4px;
 }
+
+.center h2{
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.center .tag{
+  display: flex;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.center .tag h4{
+  font-size: 11px;
+  font-weight: 500;
+  background-color: #f1f1f1;
+  color: #222;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
 .bottom{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #b1b1b1;
-  padding-top: 10px;
+  border-top: 1px solid #ececec;
+  padding-top: 12px;
+}
+
+.bottom h3{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bottom p{
+  font-size: 9px;
+  color: #8b8b8b;
+  margin-top: 2px;
+}
+
+.bottom button{
+  background-color: #111;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
