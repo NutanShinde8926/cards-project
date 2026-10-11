@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './components/Card'
+import Products from './components/Products'
 
 const App = () => {
 
@@ -10,6 +11,7 @@ const App = () => {
   
    <Card />
    <Card />
+   <Products />
  
    </div>
   )
