@@ -3,6 +3,7 @@ import Card from './components/Card'
 import Products from './components/Products'
 import Login from './components/Login'
 import Register from './components/Register'
+import { Home } from 'lucide-react'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
    <Products />
    <Login />
    <Register />
+   <Home />
  
    </div>
   )
